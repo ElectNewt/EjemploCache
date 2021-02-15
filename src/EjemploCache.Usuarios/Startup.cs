@@ -42,7 +42,7 @@ namespace EjemploCache.Usuarios
 
             services.AddDistributedRedisCache(options =>
             {
-                options.Configuration = "localhost:6380,password=password123";
+                options.Configuration = "localhost:6379,password=password123";
                 options.InstanceName = "localhost";
             });
 
